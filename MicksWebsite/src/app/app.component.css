@@ -31,6 +31,7 @@ html {
   min-height: 60px;
   min-width: 100%;
   background: #1995AD;
+  z-index: 20;
 }
 
 h1 {
@@ -62,6 +63,7 @@ h1 {
   color: #ffffff;
   text-shadow: none;
   z-index: 99;
+  background: #1995AD;
 }
 
 a {
