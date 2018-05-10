@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   -ms-background-size: cover;
   background-size: cover;
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px);
+  filter: blur(8px);
 }
 
 .header-title {
@@ -19,7 +22,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 3em;
   top: 20%;
   left: 15%;
@@ -46,16 +49,15 @@
 }
 
 .header-description {
-  top: 55%;
-  left: 55%;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  margin-left: -80px;
   position: absolute;
 }
 
 .header-container {
   position: absolute;
-  background: #1995AD;
-  -ms-opacity: 0.6;
-  opacity: 0.6;
   top: 40%;
   left: 20%;
   height: 20%;
