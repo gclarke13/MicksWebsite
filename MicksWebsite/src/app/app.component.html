@@ -1,18 +1,14 @@
-<div class="header">
-  <div class="logo">
-    <h1>MJM - Plumbing and Gas Heating</h1>
+<div class="app-navbar">
+  <div class="left-logo">
+    <h1>MJM</h1>
   </div>
-  <div id="navbar" class="navbar">
-    <a onClick="document.getElementById('header').scrollIntoView({behavior: 'smooth',  block: 'start'});">Home</a>
-    <a onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth',  block: 'start'});">About</a>
-    <a onClick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth', block: 'start'});">Portfolio</a>
-    <a onClick="document.getElementById('feedback').scrollIntoView({behavior: 'smooth', block: 'start'});">Feedback</a>
-    <a onClick="document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</a>
+  <div class="right-logo">
+    <h2>Plumbing & Gas Heating</h2>
+    <a  onClick="document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'});" class="contact-button">
+      Get in touch
+    </a>
   </div>
 </div>
 
 <app-header id="header"></app-header>
-<app-about id="about"></app-about>
-<app-portfolio id="portfolio"></app-portfolio>
-<app-feedback id="feedback"></app-feedback>
 <app-contact id="contact"></app-contact>

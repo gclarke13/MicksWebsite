@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./Header/header.component";
-import { AboutComponent } from "./About/about.component";
-import { PortfolioComponent } from "./Portfolio/portfolio.component";
-import { FeedbackComponent } from "./Feedback/feedback.component";
 import { ContactComponent } from "./Contact/contact.component";
 
 
@@ -13,9 +10,6 @@ import { ContactComponent } from "./Contact/contact.component";
   declarations: [
     AppComponent,
     HeaderComponent,
-    AboutComponent,
-    PortfolioComponent,
-    FeedbackComponent,
     ContactComponent
   ],
   imports: [
@@ -25,9 +19,6 @@ import { ContactComponent } from "./Contact/contact.component";
   bootstrap: [
     AppComponent,
     HeaderComponent,
-    AboutComponent,
-    PortfolioComponent,
-    FeedbackComponent,
     ContactComponent
   ]
 })

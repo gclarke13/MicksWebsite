@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\app\About\about.component.ts" />
     <None Remove="src\app\Header\header.component.ts" />
   </ItemGroup>
 
@@ -19,11 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\About\about.component.ts" />
     <TypeScriptCompile Include="src\app\Contact\contact.component.ts" />
-    <TypeScriptCompile Include="src\app\Feedback\feedback.component.ts" />
     <TypeScriptCompile Include="src\app\Header\header.component.ts" />
-    <TypeScriptCompile Include="src\app\Portfolio\portfolio.component.ts" />
   </ItemGroup>
 
 </Project>

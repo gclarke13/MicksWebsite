@@ -1,43 +1,44 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+
+/*
+  Colours:
+  Dark Blue: #003399
+  Light Blue: #6699ff
+  White
+  Alternative Blue: #3366CC
+*/
+
+.app-navbar {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  border: 7px #003399 solid;
+  overflow: hidden;
+  cursor: default;
+}
+
+.left-logo {
+  background: #003399;
+  width: 20%;
+  position: absolute;
+  height: 10vh;
   overflow: hidden;
 }
 
-html, body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-body {
-  min-height: 100%;
-}
-
-html {
-  height: 100%;
-}
-
-.header {
+.right-logo {
+  background: #ffffff;
+  width: 80%;
+  left: 20%;
   position: fixed;
-  margin: 0;
-  top: 0;
-  right: 0;
-  min-height: 60px;
-  min-width: 100%;
-  background: #1995AD;
-  z-index: 20;
+  height: 10vh;
+  overflow: hidden;
 }
 
 h1 {
+  top: -20px;
   text-align: right;
   margin-right: 1%;
-  padding-top: 2px;
+  padding-left: 50px;
   font-family: "Raleway", sans-serif;
   display: block;
   text-shadow: none;
@@ -45,106 +46,72 @@ h1 {
   color: white;
   position: fixed;
   display: inline-block;
-  margin: 15px 25px;
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 1.2em;
+  font-size: 8em;
+  margin: 0;
 }
 
-.navbar {
+h2 {
   text-align: right;
   margin-right: 1%;
-  padding-top: 4px;
+  padding-left: 50px;
   font-family: "Raleway", sans-serif;
   display: block;
-  color: #ffffff;
   text-shadow: none;
-  z-index: 99;
-  background: #1995AD;
+  z-index: 5;
+  color: #003399;
+  position: fixed;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 5em;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
-  color: inherit;
-  position: relative;
-  display: inline-block;
-  margin: 15px 25px;
+  top: 2vh;
+  left: 85%;
+  text-decoration: none;
+  color: #3366cc;
+  text-align: right;
+  margin-right: 1%;
+  padding-left: 50px;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  text-shadow: none;
+  z-index: 5;
+  color: #003399;
+  position: fixed;
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 0.95em;
-  cursor: pointer;
-  transition: all 0.7s linear;
+  margin: 0;
 }
 
-  a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    visibility: hidden;
-    -ms-transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.1s ease-in-out 0s;
-  }
-
-  a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
-.active {
-  color: #F2784B;
-  position: relative;
-  display: inline-block;
-  margin: 15px 25px;
-  outline: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 0.95em;
-  cursor: pointer;
+a:hover {
+  background: #6699ff;
+  color: white;
 }
 
-  .active:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #F2784B;
-    visibility: hidden;
-    -ms-transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.1s ease-in-out 0s;
-  }
-
-  .active:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
-.content-container {
-  scroll-behavior: smooth;
+.contact-button {
+  border: 3px solid #003399;
+  border-radius: 30px 0 30px 0;
+  height: auto;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  vertical-align: middle;
+  width: 120px;
+  cursor: pointer;
 }
