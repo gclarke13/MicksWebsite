@@ -9,7 +9,8 @@
 */
 
 .app-navbar {
-  position: fixed;
+  top: 0;
+  position:fixed;
   height: 10vh;
   width: 100%;
   border: 7px #003399 solid;
@@ -20,7 +21,7 @@
 .left-logo {
   background: #003399;
   width: 20%;
-  position: absolute;
+  position: fixed;
   height: 10vh;
   overflow: hidden;
 }
